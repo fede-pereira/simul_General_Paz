@@ -256,7 +256,7 @@ class Ruta:
         # Continue generating cars while the elapsed time is less than the specified simulation time
         while time.time() - inicio < tiempo:
             # Generate a random pause time between 1 and 3 seconds (simulating car arrivals)
-            pausa = random.uniform(1, 8)
+            pausa = random.uniform(1, 3)
             time.sleep(pausa)
             
             # Generate a random name for the new car and ensure it is unique

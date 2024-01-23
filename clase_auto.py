@@ -73,10 +73,6 @@ class Auto:
 
         The car will either accelerate, decelerate, or remain stationary based on its state and surroundings.
         """
-        # Check if the car is traveling above the speed limit 2.3375 = 85km/h que es la multa 
-        if self.velocidad >= 2.3375: 
-            self.multas += 1
-            print(f'Auto {self.nombre} recibio una multaen {self.x}')
         if self.velocidad < 0:
             self.velocidad = 0
 
